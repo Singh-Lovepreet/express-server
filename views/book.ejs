@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href='./'>WebSiteName</a>
+                  </div>
+                  <ul class="nav navbar-nav">
+                    <%for(let i=0;i<nav.length;i++){%>
+                        <li class="active"><a href="<%=nav[i].link%>"><%=nav[i].title%></a></li>
+                      <%}%>
+                  </ul>
+                </div>
+              </nav>
+
+<div>
+</div>
+<%for(let i=1;i<books.length;i++){%>
+    <div>
+    <ul>
+       
+            <li class="active"><a href="<%=books[i].link%>"><%=books[i].title%></a></li>
+        
+      </ul>
+      <ul >
+                <li class="active"><a href="<%=books[i].link%>"><%=books[i].author%></a></li>
+          
+         </ul>
+          <a href="/first/<%=books[i]._id%>">read Me</a>
+     </div>
+     <%}%>
+</body>
+</html>
