@@ -28,6 +28,13 @@ app.use((req,res,next)=>{
 app.use('/first',Router)    
 app.use('/admin',ar)
 app.use('/auth',auth)
+app.use('/first',Router)
+app.use('/admin',ar)
+app.use('/auth',auth)app.use('/first',Router)
+app.use('/admin',ar)
+app.use('/auth',auth)app.use('/first',Router)
+app.use('/admin',ar)
+app.use('/auth',auth)
 // app.use('/auth',auth)
 app.get('/', (req, res) => {
   
