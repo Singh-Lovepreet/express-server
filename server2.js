@@ -20,11 +20,11 @@ app.use(bp.urlencoded({extended:false}));
 app.use(cookieParser())
 require('./config/passport.js')(app)
 app.use(session({secret:'love'}))
-app.use((req,res,next)=>{
-
-    console.log("middle ware")
-    next();
-})
+// app.use((req,res,next)=>{
+//
+//     console.log("middle ware")
+//     next();
+// })
 app.use('/first',Router)    
 app.use('/admin',ar)
 app.use('/auth',auth)
