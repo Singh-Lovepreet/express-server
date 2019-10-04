@@ -26,6 +26,7 @@ app.use((req,res,next)=>{
     next();
 })
 ////////////////////////////////Hello in develpo/////////////////
+/////////////////one m,ore commnt ....////////////////
 app.use('/first',Router)    
 app.use('/admin',ar)
 app.use('/auth',auth)
