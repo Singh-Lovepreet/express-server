@@ -27,7 +27,11 @@ app.use((req,res,next)=>{
 })
 ////////////////////////////////Hello in develpo/////////////////
 /////////////////one m,ore commnt ....////////////////
+<<<<<<< HEAD
 ///////////////////// one more by develop brach ".///////////////
+=======
+////////////////////second comment by newFewture.///////////////
+>>>>>>> newfeature
 app.use('/first',Router)    
 app.use('/admin',ar)
 app.use('/auth',auth)
