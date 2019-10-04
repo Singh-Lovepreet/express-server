@@ -25,6 +25,7 @@ app.use((req,res,next)=>{
     console.log("middle ware")
     next();
 })
+////////////////////////////////Hello in develpo/////////////////
 app.use('/first',Router)    
 app.use('/admin',ar)
 app.use('/auth',auth)
@@ -35,8 +36,6 @@ app.use('/auth',auth)app.use('/first',Router)
 app.use('/admin',ar)
 app.use('/auth',auth)app.use('/first',Router)
 app.use('/admin',ar)
-=======
->>>>>>> myfeature
 app.use('/auth',auth)
 // app.use('/auth',auth)
 app.get('/', (req, res) => {
