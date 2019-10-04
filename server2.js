@@ -8,6 +8,7 @@ const session = require('express-session')
 var port = process.argv[2]
 
 app.set('views','./views')
+
 app.set('view engine', 'ejs');
 const nav =[{link:'/first',title:'first'},
 { link:'/second',title:'second'},
